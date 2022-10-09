@@ -1,0 +1,106 @@
+:root{
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --black: #000000;
+    --white: #FFFFFF;
+    --bgc1: #F5F5F5;
+    --bgc2: #F5F4FA;
+    --bgc3: #2F303A;
+}
+
+main{
+    background-color: var(--bgc1);
+    color: var(--primary-text-color);
+}
+
+ul{
+    list-style:none;
+}
+
+/* header */
+
+.header{
+    background-color: var(--white);
+}
+.logo{
+    color: var(--black);
+}
+.logo-title{
+    color: var(--accent-color);
+}
+
+/* site-nav */
+
+.site-nav .link{
+    color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color: var(--accent-color);
+}
+
+.site-nav .link.current{
+    color: var(--accent-color);
+}
+
+/* contacts */
+
+.contact-link{
+    color: var(--title-text-color);
+}
+.contact-link:hover,
+.contact-link:focus{
+    color: var(--accent-color);
+}
+
+/* hero */
+
+.hero{
+    background-color: var(--bgc3);
+}
+
+.hero-title{
+    color: var(--white);
+}
+
+/* section */
+
+.section-title{
+    color: var(--title-text-color);
+}
+
+/* features */
+
+.features .title{
+    color: var(--title-text-color);
+}
+
+/* team */
+
+.team .title{
+    color: var(--title-text-color);
+}
+.section-team{
+    background-color: var(--bgc2);
+}
+
+/* button */
+
+.button{
+    color: var(--white);
+    background-color: var(--accent-color);
+}
+
+/* footer */
+
+.footer{
+    background-color: var(--bgc3);
+}
+.footer a{
+    color: var(--white);    
+}
+.address{
+    color: var(--white);
+}
