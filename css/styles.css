@@ -9,9 +9,11 @@
     --bgc3: #2F303A;
 }
 
-main{
+body{
     background-color: var(--bgc1);
     color: var(--primary-text-color);
+
+    font-family: Roboto, sans-serif;
 }
 
 ul{
@@ -25,6 +27,11 @@ ul{
 }
 .logo{
     color: var(--black);
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
 }
 .logo-title{
     color: var(--accent-color);
@@ -34,6 +41,11 @@ ul{
 
 .site-nav .link{
     color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
 }
 
 .site-nav .link:hover,
@@ -49,7 +61,12 @@ ul{
 
 .contact-link{
     color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
+
 .contact-link:hover,
 .contact-link:focus{
     color: var(--accent-color);
@@ -63,26 +80,58 @@ ul{
 
 .hero-title{
     color: var(--white);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 /* section */
 
 .section-title{
     color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 /* features */
 
 .features .title{
     color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+
+.features .text{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
 /* team */
 
 .team .title{
     color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
 }
-.section-team{
+
+.team .text{
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.team{
     background-color: var(--bgc2);
 }
 
@@ -91,6 +140,13 @@ ul{
 .button{
     color: var(--white);
     background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
 
 /* footer */
@@ -98,9 +154,20 @@ ul{
 .footer{
     background-color: var(--bgc3);
 }
-.footer a{
-    color: var(--white);    
+
+.footer .link{
+    color: var(--white);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;    
 }
+
 .address{
     color: var(--white);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
