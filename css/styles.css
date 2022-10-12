@@ -2,6 +2,7 @@
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
+    --button-active-color: #188CE8;
     --black: #000000;
     --white: #FFFFFF;
     --bgc1: #F5F5F5;
@@ -115,6 +116,19 @@ ul{
     letter-spacing: 0.03em;
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+
 /* team */
 
 .team .title{
@@ -135,7 +149,24 @@ ul{
     background-color: var(--bgc2);
 }
 
-/* button */
+/* projects */
+
+.project-title{
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.project-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
+
+/* buttons */
 
 .button{
     color: var(--white);
@@ -149,6 +180,32 @@ ul{
     letter-spacing: 0.06em;
 }
 
+.button:hover,
+.button:focus{
+    background-color: var(--button-active-color);
+}
+
+.filter-button{
+    color: var(--title-text-color);
+    background-color: var(--bgc2);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.filter-button:hover,
+.filter-button:focus{
+    color: var(--white);
+    background-color: var(--accent-color);
+}
+
+.button,
+.filter-button{
+    cursor:pointer;
+}
+
 /* footer */
 
 .footer{
@@ -157,17 +214,14 @@ ul{
 
 .footer .link{
     color: var(--white);
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;    
 }
 
-.address{
-    color: var(--white);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+address .link:hover,
+address .link:focus{
+    color: var(--accent-color);
 }
